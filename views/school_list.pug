@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+  
+  ul
+    each school in school_list
+      li 
+        a(href=school.url) #{school.HSName} 
+
+    else
+      li There are no schools.
